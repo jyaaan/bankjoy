@@ -9,6 +9,16 @@ body {
   margin: 40px;
 }
 
+#logo-div {
+  background-color: #3547f3;
+  text-align: center;
+}
+
+#logo-div > img {
+  display: block;
+  margin: 0 auto;
+}
+
 a,
 a:hover,
 a:link,
