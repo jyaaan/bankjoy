@@ -1,12 +1,77 @@
 
+/* Common Styles */
+
+i {
+  margin: 0.5em;
+}
+
 body {
-	margin: 40px;
+  margin: 40px;
+}
+
+a,
+a:hover,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  outline: none;
+  color: #5a646e;
+}
+
+ul,
+ol {
+  padding-left: 0 !important;
+}
+
+li {
+  list-style: none;
+}
+
+section {
+  padding: 100px 0;
 }
 
 span {
-	margin: 5px;
+  margin: 5px;
 }
 
-#contact {
-	float: right;
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 200;
+}
+
+header h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: 34px;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 19px;
+}
+
+.contact {
+  text-align: right;
+  padding: 1em;
+}
+
+.contact span {
+  margin-left: 1em;
 }
