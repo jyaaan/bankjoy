@@ -7,7 +7,8 @@ i {
 
 body {
   margin: 40px;
-  background-image: url("assets/images/bbq-blue.png");
+  background-image: url("assets/images/bbq-green.png");
+  background-size: cover;
 }
 
 #logo-div {
@@ -18,6 +19,15 @@ body {
 #logo-div > img {
   display: block;
   margin: 0 auto;
+}
+
+#logo-div > h1 {
+  color: #edf9f9;
+}
+
+#logo-div > h5 {
+  font-family: "Source Sans Pro";
+  color: #deeaea;
 }
 
 a,
@@ -93,9 +103,8 @@ p {
 
 /* BUTTONS */
 
-.schedule-button a {
-  margin-left: auto;
-  margin-right: auto;
+.schedule-button {
+  text-align: center;
 }
 
 .button {
@@ -109,12 +118,18 @@ p {
   display: inline-block;
   text-decoration: none;
   background-color: #041bf2;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 
   /* box-shadow: 0 9px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
 }
 
 .button:hover {
-  color: #041bf2;
+  color: red;
+  font-size: 25px;
+  padding: 20px 45px;
 }
 
 .button:visited {
