@@ -104,7 +104,10 @@ p {
 /* BUTTONS */
 
 .schedule-button {
-  text-align: center;
+  position: relative;
+  -webkit-animation: ease-move 5s infinite;
+  animation: ease-move 5s infinite;
+  animation-timing-function: ease;
 }
 
 .button {
@@ -134,4 +137,15 @@ p {
 
 .button:visited {
   text-decoration: none;
+}
+
+/* ANIMATIONS */
+@keyframes ease-move {
+  from { left: 0; }
+  to { left: 50%; }
+}
+
+@-webkit-keyframes ease-move {
+  from { left: 0; }
+  to { left: 50%; }
 }
