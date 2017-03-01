@@ -7,10 +7,11 @@ i {
 
 body {
   margin: 40px;
+  background-image: url("assets/images/bbq-blue.png");
 }
 
 #logo-div {
-  background-color: #3547f3;
+  /* background-color: #3547f3; */
   text-align: center;
 }
 
@@ -51,14 +52,17 @@ h1,
 h2,
 h3,
 h4 {
+  font-family: "Source Sans Pro";
   font-weight: 200;
 }
 
 header h1 {
+  font-family: "Source Sans Pro";
   font-size: 60px;
 }
 
 h2 {
+  font-family: "Source Sans Pro";
   font-size: 52px;
   font-weight: 200;
 }
@@ -82,6 +86,37 @@ p {
   padding: 1em;
 }
 
-.contact span {
+.contact span a {
   margin-left: 1em;
+  color: white;
+}
+
+/* BUTTONS */
+
+.schedule-button a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  padding: 12px 35px;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #041bf2;
+
+  /* box-shadow: 0 9px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+}
+
+.button:hover {
+  color: #041bf2;
+}
+
+.button:visited {
+  text-decoration: none;
 }
