@@ -1,5 +1,12 @@
 
 /* Common Styles */
+.image-overlay {
+  background-color: rgba(61, 70, 100, 0.86);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 i {
   margin: 0.5em;
@@ -13,8 +20,14 @@ body {
   background:
     linear-gradient(rgba(61, 70, 100, 0.86), rgba(61, 70, 100, 0.86)),
     url("assets/images/background.jpg") no-repeat center top fixed;
-  background-size: cover;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #logo-div {
@@ -31,7 +44,6 @@ body {
 
 #logo-div > h1 {
   font-family: "Source Sans Pro";
-  font-style: light;
   font-weight: 200;
   color: #edf9f9;
 }
@@ -121,9 +133,9 @@ p {
 
 .schedule-button {
   position: relative;
-  -webkit-animation: ease-move 5s infinite;
-  animation: ease-move 5s infinite;
-  animation-timing-function: ease;
+  -webkit-animation: btnMove 5s infinite;
+  animation: btnMove 5s infinite;
+  animation-timing-function: linear;
 }
 
 .button {
@@ -156,21 +168,53 @@ p {
 }
 
 /* ANIMATIONS */
-@keyframes ease-move {
+@keyframes btnMove {
   from { left: 0; }
   to { left: 100%; }
 }
 
-@-webkit-keyframes ease-move {
+@-webkit-keyframes btnMove {
   from { left: 0; }
   to { left: 100%; }
 }
 
-/* COLOR AESTHETICS */
-.image-overlay {
-  background-color: rgba(61, 70, 100, 0.86);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+/* PHONES */
+
+.phones {
+  margin-top: 60px;
+  position: relative;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phones #left-shadow {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  right: -8%;
+  margin-left: 20%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background: linear-gradient(95deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+
+.phones #right {
+  width: 32%;
+  z-index: 1;
+  position: relative;
+  left: -8%;
+}
+
+.phones #left {
+  position: relative;
+  width: 32%;
+  z-index: 1;
+  right: -8%;
+}
+
+.phones #center {
+  position: relative;
+  width: 33%;
+  z-index: 3;
 }
