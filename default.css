@@ -1,9 +1,53 @@
+/* Typography */
+a {
+  font-family: "Source Sans Pro";
+  text-decoration: none;
+  outline: none;
+  color: #5a646e;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "Source Sans Pro";
+  font-weight: 200;
+}
+
+div h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 52px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 19px;
+  font-weight: 300;
+}
 
 /* Common Styles */
+
+body {
+  margin: 0;
+}
+
 .background {
   background:
     linear-gradient(rgba(61, 70, 100, 0.86), rgba(61, 70, 100, 0.86)),
     url("assets/images/background.jpg") no-repeat center top fixed;
+  background-size: cover;
   width: 100%;
   margin: 0;
   top: 0;
@@ -13,7 +57,6 @@
 }
 
 #logo-div {
-  /* background-color: #3547f3; */
   text-align: center;
 }
 
@@ -25,36 +68,22 @@
 }
 
 #logo-div > h1 {
-  font-family: "Source Sans Pro";
   font-weight: 200;
   color: #edf9f9;
 }
 
 #logo-div > h5 {
-  font-family: "Source Sans Pro";
   color: #a9cece;
+  font-weight: 300;
 }
 
-#about {
+.segment {
   position: relative;
   z-index: 5;
   width: 100%;
   margin: 0;
   left: 0;
   padding: 5px;
-}
-
-#benefits {
-  position: relative;
-  z-index: 5;
-  width: 100%;
-  margin: 0;
-  left: 0;
-}
-
-#make-relative {
-  position: relative;
-  display: block;
 }
 
 #footer {
@@ -72,51 +101,8 @@
   display: inline-block;
   padding-top: 20px;
   text-align: center;
-  height: auto;
+  height: 100vh;
   overflow: hidden;
-}
-
-a {
-  font-family: "Source Sans Pro";
-  text-decoration: none;
-  outline: none;
-  color: #5a646e;
-}
-
-/* Typography */
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Source Sans Pro";
-  font-weight: 200;
-}
-
-div h1 {
-  font-family: "Source Sans Pro";
-  font-size: 60px;
-}
-
-h2 {
-  font-family: "Source Sans Pro";
-  font-size: 52px;
-  font-weight: 200;
-}
-
-h3 {
-  font-size: 34px;
-  font-weight: 300;
-}
-
-h4 {
-  font-size: 28px;
-  font-weight: 300;
-}
-
-p {
-  font-size: 19px;
-  font-family: "Source Sans Pro";
-  font-weight: 300;
 }
 
 .contact {
@@ -156,8 +142,6 @@ p {
   margin-right: auto !important;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-
-  /* box-shadow: 0 9px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
 }
 
 .button:hover {
@@ -181,7 +165,7 @@ p {
   to { left: 80%; }
 }
 
-/* PHONES */
+/* PHONE IMAGES */
 
 .phones {
   margin-top: 60px;
@@ -236,6 +220,8 @@ p {
   left: -20%;
 }
 
+/* SECTIONS BEYOND THE FOLD */
+
 .p-border-left {
   border-left: 1px solid;
   padding-left: 5px;
@@ -244,12 +230,13 @@ p {
 
 .float-left {
   float: left;
-  width: 40%;
-  text-align: center;
-  margin-top: 10%;
+  max-width: 40%;
+  text-align: left;
+  margin-top: 8%;
+  margin-bottom: 8%;
   position: relative;
   vertical-align: middle;
-  margin-left: auto;
+  margin-left: 4%;
   left: 5%;
 }
 
