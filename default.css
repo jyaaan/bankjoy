@@ -42,7 +42,7 @@ body {
   margin: 0;
 }
 
-.background {
+.header-background {
   background:
     linear-gradient(rgba(61, 70, 100, 0.86), rgba(61, 70, 100, 0.86)),
     url("assets/images/background.jpg") no-repeat center top fixed;
@@ -85,7 +85,7 @@ body {
   padding: 5px;
 }
 
-.section-block {
+.segment-block {
   margin-right: 5%;
   margin-left: 5%;
   display: inline-block;
